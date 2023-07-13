@@ -37,5 +37,65 @@ int d = Convert.ToInt32("5"); //convertendo para inteiro
 int e = int.Parse("5"); //convertendo para inteiro
 Console.WriteLine(d + e.ToString());//convertendo para string
 
+//Exemplo operador condicional
+int tempoDeEspera = 10;
+int tempoPassado = 4;
+
+Console.WriteLine($"Tempo de espera é de {tempoPassado} minutos");
+
+if (tempoDeEspera >= tempoPassado)
+{
+  Console.WriteLine("Aguardar ônibus.");
+}
+else
+{
+  Console.WriteLine("Pegar um taxi, para não chegar atrasado.");
+}
+
+Console.WriteLine("------------------------");
+Console.WriteLine("Digite uma letra");
+string letra = Console.ReadLine();
+
+switch (letra)
+{
+  case "a":
+  case "e":
+  case "i":
+  case "o":
+  case "u":
+    Console.WriteLine("Vogal");
+    break;
+  default:
+  Console.WriteLine("Não é uma Vogal");
+    break;
+}
 
 
+//Exemplos de operadores lógicos
+bool ehMaiorDeIdade = true;
+bool possuiAutorizacaoResponsavel = false;
+
+if(ehMaiorDeIdade || possuiAutorizacaoResponsavel){
+  Console.WriteLine("Entrada liberada");
+} else {
+  Console.WriteLine("Entrada NÃO permitida");
+}
+
+bool possuiPresencaMinima = true;
+double media = 7.5;
+
+if(possuiPresencaMinima && media >= 7){
+ Console.WriteLine("Aprovado");
+} else {
+  Console.WriteLine("Reprovado");
+}
+
+
+bool choveu = true;
+bool estaTarde = true;
+
+if(choveu && estaTarde){
+  Console.WriteLine("Vou pedalar");
+} else{
+  Console.WriteLine("Não Vou pedalar");
+}
