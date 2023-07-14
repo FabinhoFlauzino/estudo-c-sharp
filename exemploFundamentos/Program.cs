@@ -54,7 +54,7 @@ else
 
 Console.WriteLine("------------------------");
 Console.WriteLine("Digite uma letra");
-string letra = Console.ReadLine();
+string? letra = Console.ReadLine();
 
 switch (letra)
 {
@@ -99,3 +99,12 @@ if(choveu && estaTarde){
 } else{
   Console.WriteLine("Não Vou pedalar");
 }
+
+//Operadores Aritiméticos
+Calculadora calc = new Calculadora();
+
+calc.Somar(10,20);
+calc.Subtrair(10,20);
+calc.Multiplicar(10,20);
+calc.Dividir(20,10);
+calc.Potencia(2,4);
