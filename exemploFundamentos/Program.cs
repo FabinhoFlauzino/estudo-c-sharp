@@ -108,3 +108,70 @@ calc.Subtrair(10,20);
 calc.Multiplicar(10,20);
 calc.Dividir(20,10);
 calc.Potencia(2,4);
+
+//Laço de REPETIÇÃO
+int numero = 10;
+
+for (int j = 0; j <= 10; j++)
+{
+  Console.WriteLine($"{numero} X {j} = {numero * j}");
+}
+
+int i = 0;
+while (i <= 10)
+{
+  Console.WriteLine($"{numero} X {i} = {numero * i}");
+  i++;
+
+  if (i == 5)
+  {
+    break;
+  }
+}
+
+int soma = 0, numero1 = 0;
+do
+{
+  Console.WriteLine("Digite um número () para parar))");
+  numero1 = Convert.ToInt32(Console.ReadLine());
+
+  soma += numero1;
+} while (numero1 != 0);
+
+Console.WriteLine($"Total da soma dos números digitado é: {soma}");
+
+string opcao;
+bool menu = true;
+
+while (menu)
+{
+  Console.WriteLine("Digite a sua opção");
+  Console.WriteLine("1 - Cadastrar cliente");
+  Console.WriteLine("2 - Buscar cliente");
+  Console.WriteLine("3 - Apagar cliente");
+  Console.WriteLine("4 - Encerrar");
+
+  opcao = Console.ReadLine();
+
+  switch (opcao)
+  {
+    case "1":
+      Console.WriteLine("Cadastro de Cliente");
+      break;
+    case "2":
+      Console.WriteLine("Buscar de Cliente");
+      break;
+    case "3":
+      Console.WriteLine("Apagar de Cliente");
+      break;
+
+    case "4":
+      Console.WriteLine("Finalizou Programa");
+      menu = false;
+      break;
+
+    default:
+      Console.WriteLine("Opção Inválida");
+      break;
+  }
+}
